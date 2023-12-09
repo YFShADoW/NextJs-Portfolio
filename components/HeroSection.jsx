@@ -17,14 +17,14 @@ const HeroSection = () => {
           >
             <h1 className="font-extrabold">
               {/* span text seperator -- for design*/}
-              <span className="text-white text-8xl ">
+              <span className="text-white text-6xl ">
                 Hello, I'm{" "} 
-                <span className="text-transparent bg-clip-text sm:text-8xl md:text-9xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                Yee Chian
+                <span className="text-transparent bg-clip-text sm:text-6xl md:text-7xl bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">
+                Yao Feng
                 </span>
               </span>
               <br></br>
-              <span className="text-7xl">I'm 
+              <span className="text-6xl">I'm 
               <TypeWritter
                 options={{
                     autoStart: true,
@@ -32,13 +32,10 @@ const HeroSection = () => {
                 }}
                 onInit={(typewriter) => {
                     typewriter
-                    .typeString`<span style="color:#FF77FF">Web 3 Developer</span>`
+                    .typeString`<span style="color:#FFFF00">Data Analysis Student</span>`
                     .pauseFor(1500)
                     .deleteAll()
-                    .typeString`<span style="color:#9E7BFF">Crypto Trader</span>`
-                    .pauseFor(1500)
-                    .deleteAll()
-                    .typeString`<span style="color:#893BFF">Front-End Developer</span>`
+                    .typeString`<span style="color:#FFA500">Software Engineer</span>`
                     .pauseFor(1500)
                     .deleteAll()
                     .start();
@@ -51,16 +48,23 @@ const HeroSection = () => {
               Slide down to know more about me! 
             </p>
               <Link
-                href="#projects" 
-                className="px-12 mb-4 inline-block py-3 rounded-full mr-4 border-solid border-2 border-indigo-600 hover:bg-violet-600">
-                <span className="text-xl text-white">Projects</span>
+                href="https://github.com/YFShADoW" 
+                className="px-6 inline-block py-3 rounded-full mr-4 border-solid border-2 border-orange-500 hover:bg-orange-400">
+                <span className="text-xl text-white">Github</span>
               </Link>
              
               <Link
-                href="https://drive.google.com/file/d/1ajOJwhrua1lElHtbVjzOv12ySXn8xPBa/view?usp=sharing"
-                className="px-6 inline-block py-3 rounded-full mr-4 border-solid border-2  border-pink-500 hover:bg-pink-400">
-                <span className="text-xl text-white">View my Resume</span>
+                href="https://drive.google.com/file/d/1NpDwipVXvHRDXqCOtL9wGnTSK_IK8HWi/view?usp=sharing"
+                className="px-6 inline-block py-3 rounded-full mr-4 border-solid border-2  border-yellow-500 hover:bg-yellow-400">
+                <span className="text-xl text-white">Resume</span>
               </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/yao-feng-chooi/"
+                className="px-6 inline-block py-3 rounded-full mr-4 border-solid border-2  border-red-500 hover:bg-red-400">
+                <span className="text-xl text-white">Linkedin</span>
+              </Link>
+
           </motion.div>
         <div className="col-span-4 md:col-span-4 place-self-center mt-12 lg:mt-0 pt-0 lg:pt-24">
           <motion.div
